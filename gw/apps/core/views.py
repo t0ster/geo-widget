@@ -6,7 +6,7 @@ from pygeocoder import Geocoder
 
 
 class LocationsForm(forms.Form):
-    q = forms.CharField(label="Wds")
+    q = forms.CharField(label="Search Location")
 
     def autocomplete(self):
         results = Geocoder.geocode(self.cleaned_data["q"])
