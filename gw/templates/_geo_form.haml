@@ -1,6 +1,4 @@
-- load debug
-
-%form{ :action => "http://maps.google.com/maps"}
+%form{ :action => "http://maps.google.com/maps" }
   .row
     %h2.span4= form.fields.q.label
     %input.span8{ :name => "q", :type => "text", :rel => "autocomplete", "data-url": "{% url locations_autocomplete %}" }
