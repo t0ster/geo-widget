@@ -1,0 +1,9 @@
+- extends "base.haml"
+- load debug
+
+- block title
+  Search Location
+{% block body_class %}index_page{% endblock %}
+
+- block content
+  - include "_geo_form"

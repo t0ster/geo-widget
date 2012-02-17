@@ -1,0 +1,4 @@
+%form{ :action => "http://maps.google.com/maps"}
+  .row
+    %input.span8.offset3{ :name => "q", :type => "text", :rel => "autocomplete", "data-url": "{% url locations_autocomplete %}" }
+    %input.btn.primary.span3{ :type => "submit", :value => "Search" }
